@@ -1,0 +1,40 @@
+.footer {
+  background-color: #343a40;
+  padding: 68px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  &__links {
+    margin-bottom: 32px;
+    & > * {
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+  }
+  &__link {
+    color: #007bff;
+    text-decoration: underline;
+    &:hover,
+    &:active,
+    &:focus {
+      color: #e6e6e6;
+      text-decoration: none;
+    }
+    &.active {
+      color: #e6e6e6;
+      text-decoration: none;
+    }
+  }
+
+  &__heading {
+    color: #e6e6e6;
+    font-weight: 600;
+  }
+
+  &__social {
+    margin: 0;
+    color: #e6e6e6;
+  }
+}
