@@ -1,31 +1,5 @@
-.coffee {
-    width: 100%; 
-    @media (min-width: 768px) {
-      display: flex;
-      flex-flow: row nowrap;
-      & > * {
-          margin-right: 90px;
-        }
-    }
-}
-.coffee__head {
-    .head__headline {
-        font-variant: small-caps;
-    }
-}
 .coffee__items {
-   
-
-    .coffee__item {
-        @media (min-width: 768px) {
-            display: flex;
-            flex-flow: row nowrap;
-            & > * {
-                margin-right: 90px;
-              }
-          }
-        .item__name {
-            font-variant: small-caps;
-        }
-        
+    width: 1240px;
+    display: flexbox;
+    just;
 }
