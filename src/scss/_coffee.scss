@@ -1,32 +1,31 @@
+.coffee {
+    width: 100%; 
+    @media (min-width: 768px) {
+      display: flex;
+      flex-flow: row nowrap;
+      & > * {
+          margin-right: 90px;
+        }
+    }
+}
 .coffee__head {
     .head__headline {
         font-variant: small-caps;
     }
 }
 .coffee__items {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+   
 
     .coffee__item {
-        display: flex;
-        margin: 3rem;
+        @media (min-width: 768px) {
+            display: flex;
+            flex-flow: row nowrap;
+            & > * {
+                margin-right: 90px;
+              }
+          }
         .item__name {
             font-variant: small-caps;
         }
-        .item__picture {
-
-            @media screen (min-width: 400px) {
-                min-width: 300px; 
-            }
-            @media screen (max-width: 399px){
-                
-            }
-            
-        }
-        .item__description {
-            max-width: 30vw;
-        }
-    }
+        
 }

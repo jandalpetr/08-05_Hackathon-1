@@ -3,27 +3,22 @@ $font-family: 'Rajdhani', sans-serif;
 .menu {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    max-width: 992px;
 
     &__head {
         padding: 0 10px 0 10px;
-        background-color: hotpink;
         font-family: $font-family;
         font-variant: small-caps;
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .menu__items {
-        display: flex; 
-        flex-wrap: wrap;
-
-        @media screen (max-width: ) {
-            
-        }
-        .menu__items >* {
-            flex-grow: 1;
-            flex-shrink: 1;
-            flex-basis: 280px; 
-        }
+        @media (min-width: 768px) {
+            display: flex;
+            flex-flow: row nowrap;
+            & > * {
+                margin-right: 90px;
+              }
+          }
     }
         .menu__item {
             display: flex;
@@ -38,6 +33,7 @@ $font-family: 'Rajdhani', sans-serif;
                 font-family: $font-family;
                 font-variant: small-caps;
                 font-size: 2rem;
+            }    
         }
             .menu__item {
                 padding: 0 10px 0 10px;
