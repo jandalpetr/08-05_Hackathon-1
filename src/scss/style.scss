@@ -1,9 +1,10 @@
 @import "base.scss";
-@import "coffee.scss";
+@import "coffee";
 @import "footer.scss";
 @import "home.scss";
-@import "menu.scss";
+@import "menu";
 @import "navbar.scss";
 body{
     font-family: 'Rajdhani', sans-serif;
+    width: 100vw; 
 }
