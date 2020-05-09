@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!--navigation for menu page:-->
+    <div style="max-width: 992px; margin: 0 auto;">
+        <div class="navbar">
+        <img class="navbar__logo" src="img/logo.svg" alt="" />
+        <div class="navbar__links">
+        <a class="navbar__link" href="index.html">Home</a>
+        <a class="navbar__link" href="menu.html">Menu</a>
+        <a class="navbar__link" href="coffee.html">Coffee</a>
+        <a class="navbar__link" href="#">Our Story</a>
+        </div>
+        </div>
     <!--overall container for full menu page:-->
+    <main>
     <div class="menu">
-        <!--navigation for menu page:-->
-        <div style="max-width: 992px; margin: 0 auto;">
-            <div class="navbar">
-              <img class="navbar__logo" src="img/logo.svg" alt="" />
-              <div class="navbar__links">
-                <a class="navbar__link" href="#">Home</a>
-                <a class="navbar__link" href="#">Menu</a>
-                <a class="navbar__link" href="#">Coffee</a>
-                <a class="navbar__link" href="#">Our Story</a>
-              </div>
-            </div>
-          <div style="max-width: 768px; margin: 0 auto;">
+        <div style="max-width: 768px; margin: 0 auto;">
         <!--"headline" for menu page:-->
         <div class="menu__head">Menu</div>
         <!--overall container for items -->
         <div class="menu__items">
             <!--container for Item 1-->
             <div class="menu__item">
-                <p class="item__head"> Brewed Coffee</p>
+                <p class="item__head">Brewed Coffee</p>
                 <div class="menu__item">
                     <div class="item__selection">
                         <p class="container__text">Coffee  (big)</p>
@@ -40,7 +41,7 @@
                 </div>
             </div>
             <div class="menu__item">
-                <p class="item__head"> Espresso/ Coffee</p>
+                <p class="item__head">Espresso/ Coffee</p>
                 <div class="menu__item">
                     <div class="item__selection">
                         <p class="container__text">Espresso  (double)</p>
@@ -57,7 +58,7 @@
                 </div>
             </div>
             <div class="menu__item">
-                <p class="item__head"> Hot Drinks</p>
+                <p class="item__head">Hot Drinks</p>
                 <div class="menu__item">
                     <div class="item__selection">
                         <p class="container__text">Tee (peppermint, black, green)</p>
@@ -79,7 +80,7 @@
                 </div>
             </div>
             <div class="menu__item">
-                <p class="item__head"> Espresso <br> Coffee</p>
+                <p class="item__head">Espresso Coffee</p>
                 <div class="menu__item">
                     <div class="item__selection">
                         <p class="container__text">Espresso</p>
@@ -96,20 +97,21 @@
                 </div>
             </div>
         </div>
-        <img class="menu__picture" style="height: auto; max-width: 992px; display: block; margin-left: auto; margin-right: auto;" src="/img/espresso-machine-detail.jpg" alt="Coffee Machine">
+        <!-- <img class="menu__picture" style="height: auto; max-width: 992px; display: block; margin-left: auto; margin-right: auto;" src="/img/espresso-machine-detail.jpg" alt="Coffee Machine"> -->
+        <img class="menu__picture" src="/img/espresso-machine-detail.jpg" alt="Coffee Machine">
+    </div>
+    </main>
         <div class="footer">
             <div class="footer__links">
-              <a class="footer__link active" href="index.html">Home</a>
-              <a class="footer__link" href="menu.html">Menu</a>
+              <a class="footer__link" href="index.html">Home</a>
+              <a class="footer__link active" href="menu.html">Menu</a>
               <a class="footer__link" href="coffee.html">Coffee</a>
               <a class="footer__link" href="#">Our Story</a>
             </div>
             <p class="footer__heading">#HIPSTERSMAKECOFFEE</p>
-            <p class="footer__social">
-              Follow us on <a class="footer__link" href="#">Twitter</a> and
+            <p class="footer__social">Follow us on <a class="footer__link" href="#">Twitter</a> and
               <a class="footer__link" href="#">Instagram</a>
             </p>
-        </div>
-    </div>
+        </div>    
 </body>
 </html>

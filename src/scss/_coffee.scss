@@ -1,5 +1,36 @@
-.coffee__items {
-    width: 1240px;
-    display: flexbox;
-    just;
+.coffee__items{
+    width: 100%; 
+  @media (min-width: 768px) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+}
+.coffee__item{
+    flex-basis: 45%;
+    background-color: rgba(228, 224, 224, 0.76);
+    margin-bottom: 20px;
+
+}
+.item__picture{
+    max-width: 100%;
+
+}
+.item__name{
+    margin-top: 15px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.item__pict_wraper{
+display: flex;
+justify-content: center;   
+}
+.item__flavours{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.item__description{
+    margin-left: 15px;
+    margin-right: 15px; 
 }
